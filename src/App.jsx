@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
-import Navbar from "./components/Navbar"
+import Navbar from "./components/Navbar";
 import ProtectedRoute from "./components/ProtectedRoute"
-import AIMentor from "./components/AIMentor"
+import AIMentor from "./components/AIMentor";
 
 import Home from "./Pages/Home"
 import Login from "./Pages/Login"
