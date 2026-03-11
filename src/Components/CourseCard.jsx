@@ -1,10 +1,11 @@
 function CourseCard({ course }) {
-  return (
-    <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 transition">
 
-      <h2 className="text-xl font-semibold mb-2">
+  return (
+    <div className="bg-gray-800 rounded-xl p-6 hover:bg-gray-700 hover:scale-105 transition duration-200 cursor-pointer">
+
+      <h3 className="text-xl font-semibold mb-2">
         {course.title}
-      </h2>
+      </h3>
 
       <p className="text-gray-400 mb-4">
         {course.description}

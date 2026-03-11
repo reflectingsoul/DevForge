@@ -1,30 +1,31 @@
 import { Link } from "react-router-dom"
 
 function Sidebar() {
-  return (
-    <div className="w-60 bg-gray-900 text-white h-screen p-6">
 
-      <h2 className="text-xl font-bold mb-8 text-blue-400">
+  return (
+    <aside className="hidden md:flex flex-col w-64 bg-gray-900 border-r border-gray-800 text-white p-6">
+
+      <h2 className="text-xl font-bold text-blue-400 mb-8">
         DevForge
       </h2>
 
-      <div className="flex flex-col gap-4">
+      <nav className="flex flex-col gap-4">
 
-        <Link to="/dashboard" className="hover:text-blue-400">
+        <Link className="hover:text-blue-400" to="/dashboard">
           Dashboard
         </Link>
 
-        <Link to="/courses" className="hover:text-blue-400">
+        <Link className="hover:text-blue-400" to="/courses">
           Courses
         </Link>
 
-        <Link to="/playground" className="hover:text-blue-400">
+        <Link className="hover:text-blue-400" to="/playground">
           Playground
         </Link>
 
-      </div>
+      </nav>
 
-    </div>
+    </aside>
   )
 }
 

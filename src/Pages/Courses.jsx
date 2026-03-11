@@ -1,4 +1,5 @@
-import CourseCard from "../Components/CourseCard"
+import DashboardLayout from "../components/DashboardLayout"
+import CourseCard from "../components/CourseCard"
 
 const courses = [
   {
@@ -10,32 +11,27 @@ const courses = [
   {
     id: 2,
     title: "Advanced JavaScript",
-    description: "Deep dive into closures, event loop, and V8 engine.",
+    description: "Deep dive into closures and event loop.",
     difficulty: "Expert"
   },
   {
     id: 3,
     title: "React Architecture",
-    description: "Understand Virtual DOM, reconciliation, and performance.",
+    description: "Understand virtual DOM and performance optimization.",
     difficulty: "Advanced"
-  },
-  {
-    id: 4,
-    title: "Backend Scalability",
-    description: "Learn how large systems scale to millions of users.",
-    difficulty: "Elite"
   }
 ]
 
 function Courses() {
-  return (
-    <div className="min-h-screen bg-gray-900 text-white p-10">
 
-      <h1 className="text-4xl font-bold mb-8">
+  return (
+    <DashboardLayout>
+
+      <h1 className="text-3xl md:text-4xl font-bold mb-8">
         Courses
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
         {courses.map((course) => (
           <CourseCard key={course.id} course={course} />
@@ -43,7 +39,7 @@ function Courses() {
 
       </div>
 
-    </div>
+    </DashboardLayout>
   )
 }
 
