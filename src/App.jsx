@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Navbar from "./Components/Navbar"
-import ProtectedRoute from "./components/ProtectedRoute"
+import ProtectedRoute from "./Components/ProtectedRoute"
 
 import Home from "./Pages/Home"
 import Login from "./Pages/Login"
