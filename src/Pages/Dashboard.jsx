@@ -1,5 +1,5 @@
-import DashboardLayout from "../components/DashboardLayout"
-import ProgressBar from "../components/ProgressBar"
+import DashboardLayout from "../Components/DashboardLayout"
+import ProgressBar from "../Components/ProgressBar"
 
 function Dashboard() {
 

@@ -1,5 +1,5 @@
-import DashboardLayout from "../components/DashboardLayout"
-import CourseCard from "../components/CourseCard"
+import DashboardLayout from "../Components/DashboardLayout"
+import CourseCard from "../Components/CourseCard"
 
 const courses = [
   {
