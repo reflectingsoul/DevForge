@@ -2,7 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 
 import Navbar from "./Components/Navbar";
 import ProtectedRoute from "./Components/ProtectedRoute"
-import AIMentor from "./components/AIMentor";
+import AIMentor from "./Components/AIMentor";
 
 import Home from "./Pages/Home"
 import Login from "./Pages/Login"
